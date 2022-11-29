@@ -22,7 +22,7 @@ public class Logintest
 	public void launchbrowser()
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Chrome drivers\\Chromedriver99.1\\chromedriver_win32 (1)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
 		
 		WebDriver ch= new ChromeDriver();
 		
