@@ -10,11 +10,13 @@ import Pages.Login;
 public class Logintest 
 {
 	WebDriver driver;
+	
+	
 	@Test
-	public void swaglogin()
+	public void cwa()
 	{
 		Login l1= new Login(driver);
-		l1.Userlogin();
+		l1.Userlogin("pkadrikar@tempositions.com", "test123");
 	}
 	
 	
@@ -26,7 +28,7 @@ public class Logintest
 		
 		WebDriver ch= new ChromeDriver();
 		
-		ch.get("https://www.saucedemo.com");
+		ch.get("https://apps.tempositions.com/cwa2dev");
 		
 		ch.manage().window().maximize();
 	}

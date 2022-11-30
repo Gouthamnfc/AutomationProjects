@@ -5,7 +5,7 @@
     <classes>
       <class name="Test.Logintest">
         <methods>
-          <include name="swaglogin"/>
+          <include name="cwa"/>
           <include name="launchbrowser"/>
         </methods>
       </class> <!-- Test.Logintest -->

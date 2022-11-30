@@ -11,13 +11,13 @@ public class Login
 	
 	WebDriver driver;
 	
-	@FindBy(id="user-name")
-	WebElement username;
+	@FindBy(id="UserName")
+	WebElement emailaddress;
 	
-	@FindBy(id="password")
-	WebElement password;
+	@FindBy(id="Password")
+	WebElement pass;
 	
-	@FindBy(id="login-button")
+	@FindBy(css=".btn.btn-success.btn-login")
 	WebElement loginbutton;
 	
 	
@@ -28,11 +28,11 @@ public class Login
 	}
 	
 	
-	public void Userlogin()
+	public void Userlogin(String email,String key)
 	{
-		username.sendKeys("standard_user");
+		emailaddress.sendKeys(email);
 		
-		password.sendKeys("secret_sauce");
+		pass.sendKeys(key);
 		
 		loginbutton.click();
 	}
